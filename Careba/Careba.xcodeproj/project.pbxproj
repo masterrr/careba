@@ -13,18 +13,7 @@
 		AFD8DCD01A2E0C770005DFB0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFD8DCCE1A2E0C770005DFB0 /* Main.storyboard */; };
 		AFD8DCD21A2E0C770005DFB0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFD8DCD11A2E0C770005DFB0 /* Images.xcassets */; };
 		AFD8DCD51A2E0C770005DFB0 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = AFD8DCD31A2E0C770005DFB0 /* LaunchScreen.xib */; };
-		AFD8DCE11A2E0C770005DFB0 /* CarebaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AFD8DCE01A2E0C770005DFB0 /* CarebaTests.m */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		AFD8DCDB1A2E0C770005DFB0 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = AFD8DCB91A2E0C770005DFB0 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = AFD8DCC01A2E0C770005DFB0;
-			remoteInfo = Careba;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		AFD8DCC11A2E0C770005DFB0 /* Careba.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Careba.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -37,20 +26,12 @@
 		AFD8DCCF1A2E0C770005DFB0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AFD8DCD11A2E0C770005DFB0 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		AFD8DCD41A2E0C770005DFB0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		AFD8DCDA1A2E0C770005DFB0 /* CarebaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CarebaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFD8DCDF1A2E0C770005DFB0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AFD8DCE01A2E0C770005DFB0 /* CarebaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CarebaTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		AFD8DCBE1A2E0C770005DFB0 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		AFD8DCD71A2E0C770005DFB0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -73,7 +54,6 @@
 			isa = PBXGroup;
 			children = (
 				AFD8DCC11A2E0C770005DFB0 /* Careba.app */,
-				AFD8DCDA1A2E0C770005DFB0 /* CarebaTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -139,24 +119,6 @@
 			productReference = AFD8DCC11A2E0C770005DFB0 /* Careba.app */;
 			productType = "com.apple.product-type.application";
 		};
-		AFD8DCD91A2E0C770005DFB0 /* CarebaTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = AFD8DCE71A2E0C770005DFB0 /* Build configuration list for PBXNativeTarget "CarebaTests" */;
-			buildPhases = (
-				AFD8DCD61A2E0C770005DFB0 /* Sources */,
-				AFD8DCD71A2E0C770005DFB0 /* Frameworks */,
-				AFD8DCD81A2E0C770005DFB0 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				AFD8DCDC1A2E0C770005DFB0 /* PBXTargetDependency */,
-			);
-			name = CarebaTests;
-			productName = CarebaTests;
-			productReference = AFD8DCDA1A2E0C770005DFB0 /* CarebaTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -168,10 +130,6 @@
 				TargetAttributes = {
 					AFD8DCC01A2E0C770005DFB0 = {
 						CreatedOnToolsVersion = 6.1;
-					};
-					AFD8DCD91A2E0C770005DFB0 = {
-						CreatedOnToolsVersion = 6.1;
-						TestTargetID = AFD8DCC01A2E0C770005DFB0;
 					};
 				};
 			};
@@ -189,7 +147,6 @@
 			projectRoot = "";
 			targets = (
 				AFD8DCC01A2E0C770005DFB0 /* Careba */,
-				AFD8DCD91A2E0C770005DFB0 /* CarebaTests */,
 			);
 		};
 /* End PBXProject section */
@@ -202,13 +159,6 @@
 				AFD8DCD01A2E0C770005DFB0 /* Main.storyboard in Resources */,
 				AFD8DCD51A2E0C770005DFB0 /* LaunchScreen.xib in Resources */,
 				AFD8DCD21A2E0C770005DFB0 /* Images.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		AFD8DCD81A2E0C770005DFB0 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,23 +175,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AFD8DCD61A2E0C770005DFB0 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				AFD8DCE11A2E0C770005DFB0 /* CarebaTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		AFD8DCDC1A2E0C770005DFB0 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = AFD8DCC01A2E0C770005DFB0 /* Careba */;
-			targetProxy = AFD8DCDB1A2E0C770005DFB0 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		AFD8DCCE1A2E0C770005DFB0 /* Main.storyboard */ = {
@@ -359,40 +293,6 @@
 			};
 			name = Release;
 		};
-		AFD8DCE81A2E0C770005DFB0 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = CarebaTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Careba.app/Careba";
-			};
-			name = Debug;
-		};
-		AFD8DCE91A2E0C770005DFB0 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = CarebaTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Careba.app/Careba";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -410,14 +310,6 @@
 			buildConfigurations = (
 				AFD8DCE51A2E0C770005DFB0 /* Debug */,
 				AFD8DCE61A2E0C770005DFB0 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-		};
-		AFD8DCE71A2E0C770005DFB0 /* Build configuration list for PBXNativeTarget "CarebaTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				AFD8DCE81A2E0C770005DFB0 /* Debug */,
-				AFD8DCE91A2E0C770005DFB0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
