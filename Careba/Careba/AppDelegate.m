@@ -7,6 +7,9 @@
 //
 
 #import "AppDelegate.h"
+#import "YandexMapKit.h"
+#import "CAAppearance.h"
+#import "CAMenuViewController.h"
 
 @interface AppDelegate ()
 
@@ -16,7 +19,18 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    [CAAppearance setupUIAppearance];
+    [YMKConfiguration sharedInstance].apiKey = kYandexMapKey;
+    
+    [SlideNavigationController sharedInstance].leftMenu = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"CAMenuViewController"];
+    
+    UIBarButtonItem *buttonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"NavBarMenu"] style:UIBarButtonItemStylePlain target:self action:nil];
+    buttonItem.tintColor = [UIColor whiteColor];
+    
+    [SlideNavigationController sharedInstance].leftBarButtonItem = buttonItem;
+    
+        
     return YES;
 }
 

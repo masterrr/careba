@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6250" systemVersion="14A388a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CAFoodCellSingle" id="Ao9-42-hOk" customClass="CAFoodCellSingle">
+            <rect key="frame" x="0.0" y="0.0" width="195" height="192"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="195" height="192"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="food_sampe" translatesAutoresizingMaskIntoConstraints="NO" id="m9R-L8-fNQ">
+                        <rect key="frame" x="0.0" y="0.0" width="195" height="192"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Жареные баклажаны с сыром Фета" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2NM-Wy-HOn">
+                        <rect key="frame" x="4" y="138" width="187" height="34"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Blf-Qg-i1T">
+                        <rect key="frame" x="78" y="47" width="39" height="39"/>
+                        <state key="normal" image="plusButton">
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <state key="selected" image="tickCell"/>
+                        <connections>
+                            <action selector="plusButtonHit:" destination="Ao9-42-hOk" eventType="touchUpInside" id="3Za-b4-d75"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstItem="m9R-L8-fNQ" firstAttribute="top" secondItem="Ao9-42-hOk" secondAttribute="top" id="0Te-EP-llo"/>
+                <constraint firstItem="2NM-Wy-HOn" firstAttribute="leading" secondItem="Ao9-42-hOk" secondAttribute="leading" constant="4" id="5HO-FM-5gE"/>
+                <constraint firstAttribute="centerX" secondItem="Blf-Qg-i1T" secondAttribute="centerX" id="IQv-N8-Ddx"/>
+                <constraint firstItem="m9R-L8-fNQ" firstAttribute="leading" secondItem="Ao9-42-hOk" secondAttribute="leading" id="V1Z-IZ-wwh"/>
+                <constraint firstAttribute="bottom" secondItem="m9R-L8-fNQ" secondAttribute="bottom" id="Vav-Pf-e23"/>
+                <constraint firstAttribute="trailing" secondItem="2NM-Wy-HOn" secondAttribute="trailing" constant="4" id="YiI-lF-qBM"/>
+                <constraint firstAttribute="bottom" secondItem="2NM-Wy-HOn" secondAttribute="bottom" constant="20" id="i6b-wx-BhM"/>
+                <constraint firstAttribute="centerY" secondItem="Blf-Qg-i1T" secondAttribute="centerY" constant="30" id="mhI-7T-Ndn"/>
+                <constraint firstAttribute="trailing" secondItem="Blf-Qg-i1T" secondAttribute="trailing" constant="20" id="orR-h6-GSZ"/>
+                <constraint firstAttribute="trailing" secondItem="m9R-L8-fNQ" secondAttribute="trailing" id="rzM-5K-DpO"/>
+            </constraints>
+            <size key="customSize" width="195" height="192"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="orR-h6-GSZ"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="plusButton" destination="Blf-Qg-i1T" id="pkV-Ag-RBy"/>
+            </connections>
+            <point key="canvasLocation" x="428.5" y="679"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="food_sampe" width="162" height="154"/>
+        <image name="plusButton" width="39" height="39"/>
+        <image name="tickCell" width="39" height="39"/>
+    </resources>
+</document>
