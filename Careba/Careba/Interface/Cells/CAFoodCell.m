@@ -7,6 +7,8 @@
 //
 
 #import "CAFoodCell.h"
+#import "UIImageView+AFNetworking.h"
+
 
 @interface CAFoodCell ()
 - (IBAction)plusButtonHit:(id)sender;
@@ -14,38 +16,67 @@
 @property (weak, nonatomic) IBOutlet UIButton *minusButton;
 @property (weak, nonatomic) IBOutlet UIButton *plusButton;
 @property (weak, nonatomic) IBOutlet UILabel *currentCountLabel;
+@property (weak, nonatomic) IBOutlet UILabel *titleLabel;
+@property (weak, nonatomic) IBOutlet UILabel *priceLabel;
+@property (weak, nonatomic) IBOutlet UIImageView *imageView;
+@property (weak, nonatomic) CAItem *item;
 
 @end
+
 
 @implementation CAFoodCell {
     NSLayoutConstraint *_xHorizontalPlusButtonConstraint;
     NSInteger currentCount;
 }
 
+
+-(void)setItem:(CAItem*)item {
+    _item = item;
+    _titleLabel.text = item.name;
+    _priceLabel.text = item.priceText;
+    [_imageView setImageWithURL:item.imageNSURL];
+    
+    NSInteger quantity = [item quantityInCard];
+    if (currentCount != quantity) {
+        currentCount = quantity;
+        if (currentCount == 0) {
+            [self reconfigureZero];
+        } else {
+            [self reconfigureOneOrMore];
+        }
+        [self updateCountLabelText];
+    }
+}
+
 -(void)awakeFromNib {
-    currentCount = 1;
+    currentCount = 0;
+    [self reconfigureZero];
+}
+
+-(void)updateCountLabelText {
+     _currentCountLabel.text = [NSString stringWithFormat:@"%ld", (long)currentCount];
 }
 
 - (IBAction)plusButtonHit:(id)sender {
     if (++currentCount == 1) {
         [self reconfigureOneOrMore];
     } else {
-        _currentCountLabel.text = [NSString stringWithFormat:@"%ld", (long)currentCount];
+        [self updateCountLabelText];
     }
     
     if (currentCount > 6) {
-        [[[UIAlertView alloc] initWithTitle:@"WOW SUCH FOOD" message:@"A LOT OF FOOD YOU'VE CHOSEN MY FRIEND" delegate:nil cancelButtonTitle:@"That's alright" otherButtonTitles: nil] show];
+        [[[UIAlertView alloc] initWithTitle:@"Слишком много еды" message:@"Возможно, это слишком много" delegate:nil cancelButtonTitle:@"Нет, я съем" otherButtonTitles: nil] show];
     }
+    [_delegate clickedUp:_item];
 }
 
 - (IBAction)minusButtonHit:(id)sender {
     if (--currentCount == 0) {
         [self reconfigureZero];
     } else {
-        _currentCountLabel.text = [NSString stringWithFormat:@"%ld", (long)currentCount];
+        [self updateCountLabelText];
     }
-    
-
+    [_delegate clickedDown:_item];
 }
 
 -(void)reconfigureOneOrMore {

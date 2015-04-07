@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6250" systemVersion="14A388a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
@@ -13,9 +13,13 @@
                 <rect key="frame" x="0.0" y="0.0" width="195" height="192"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="food_sampe" translatesAutoresizingMaskIntoConstraints="NO" id="QOk-HI-zaN">
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="food_sampe" translatesAutoresizingMaskIntoConstraints="NO" id="QOk-HI-zaN">
                         <rect key="frame" x="0.0" y="0.0" width="195" height="192"/>
                     </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Avq-Ku-kmu">
+                        <rect key="frame" x="0.0" y="0.0" width="195" height="192"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.45000000000000001" colorSpace="calibratedRGB"/>
+                    </view>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bNW-0G-WBq">
                         <rect key="frame" x="20" y="47" width="39" height="39"/>
                         <state key="normal" image="minusButton">
@@ -56,9 +60,12 @@
                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             </view>
             <constraints>
+                <constraint firstItem="QOk-HI-zaN" firstAttribute="top" secondItem="Avq-Ku-kmu" secondAttribute="top" id="3cd-je-Y6a"/>
+                <constraint firstItem="QOk-HI-zaN" firstAttribute="leading" secondItem="Avq-Ku-kmu" secondAttribute="leading" id="9X5-Et-Bbm"/>
                 <constraint firstItem="fhW-hJ-hAf" firstAttribute="top" secondItem="bNW-0G-WBq" secondAttribute="top" id="BlR-lM-XIM"/>
                 <constraint firstItem="fhW-hJ-hAf" firstAttribute="centerY" secondItem="gsV-21-8mD" secondAttribute="centerY" id="Cj2-dE-skv"/>
                 <constraint firstItem="UmR-OO-NIa" firstAttribute="leading" secondItem="XHy-nx-ctE" secondAttribute="leading" constant="5" id="EbH-76-NDi"/>
+                <constraint firstItem="QOk-HI-zaN" firstAttribute="trailing" secondItem="Avq-Ku-kmu" secondAttribute="trailing" id="FNe-6b-Jzq"/>
                 <constraint firstItem="VDH-Yz-Cc0" firstAttribute="leading" secondItem="XHy-nx-ctE" secondAttribute="leading" constant="4" id="IG7-ab-2r7"/>
                 <constraint firstAttribute="trailing" secondItem="UmR-OO-NIa" secondAttribute="trailing" constant="5" id="ISQ-ol-WNH"/>
                 <constraint firstItem="UmR-OO-NIa" firstAttribute="top" secondItem="VDH-Yz-Cc0" secondAttribute="bottom" constant="5" id="J29-e1-3S7"/>
@@ -70,6 +77,7 @@
                 <constraint firstItem="VDH-Yz-Cc0" firstAttribute="top" secondItem="gsV-21-8mD" secondAttribute="bottom" constant="10" id="Syw-LK-ACG"/>
                 <constraint firstAttribute="centerX" secondItem="gsV-21-8mD" secondAttribute="centerX" id="Tay-YL-r6f"/>
                 <constraint firstItem="fhW-hJ-hAf" firstAttribute="top" secondItem="gsV-21-8mD" secondAttribute="top" id="XHq-Mm-9TE"/>
+                <constraint firstItem="QOk-HI-zaN" firstAttribute="bottom" secondItem="Avq-Ku-kmu" secondAttribute="bottom" id="cuL-RV-7Wg"/>
                 <constraint firstItem="fhW-hJ-hAf" firstAttribute="centerY" secondItem="bNW-0G-WBq" secondAttribute="centerY" id="dNa-8I-fQ8"/>
                 <constraint firstAttribute="trailing" secondItem="QOk-HI-zaN" secondAttribute="trailing" id="oKZ-dn-81S"/>
                 <constraint firstAttribute="bottom" secondItem="QOk-HI-zaN" secondAttribute="bottom" id="oS5-Ff-f3L"/>
@@ -84,8 +92,11 @@
             </variation>
             <connections>
                 <outlet property="currentCountLabel" destination="gsV-21-8mD" id="9oa-3X-ROA"/>
+                <outlet property="imageView" destination="QOk-HI-zaN" id="lfY-z9-U6X"/>
                 <outlet property="minusButton" destination="bNW-0G-WBq" id="I7r-oz-LoE"/>
                 <outlet property="plusButton" destination="fhW-hJ-hAf" id="MgE-fE-9F2"/>
+                <outlet property="priceLabel" destination="UmR-OO-NIa" id="CVn-Hi-72J"/>
+                <outlet property="titleLabel" destination="VDH-Yz-Cc0" id="zU7-4Q-yaL"/>
             </connections>
             <point key="canvasLocation" x="333.5" y="465"/>
         </collectionViewCell>

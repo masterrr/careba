@@ -1,59 +1,90 @@
 PODS:
-  - AFNetworking (2.5.0):
-    - AFNetworking/NSURLConnection (= 2.5.0)
-    - AFNetworking/NSURLSession (= 2.5.0)
-    - AFNetworking/Reachability (= 2.5.0)
-    - AFNetworking/Security (= 2.5.0)
-    - AFNetworking/Serialization (= 2.5.0)
-    - AFNetworking/UIKit (= 2.5.0)
-  - AFNetworking/NSURLConnection (2.5.0):
+  - AFNetworking (2.5.1):
+    - AFNetworking/NSURLConnection (= 2.5.1)
+    - AFNetworking/NSURLSession (= 2.5.1)
+    - AFNetworking/Reachability (= 2.5.1)
+    - AFNetworking/Security (= 2.5.1)
+    - AFNetworking/Serialization (= 2.5.1)
+    - AFNetworking/UIKit (= 2.5.1)
+  - AFNetworking/NSURLConnection (2.5.1):
     - AFNetworking/Reachability
     - AFNetworking/Security
     - AFNetworking/Serialization
-  - AFNetworking/NSURLSession (2.5.0):
+  - AFNetworking/NSURLSession (2.5.1):
     - AFNetworking/Reachability
     - AFNetworking/Security
     - AFNetworking/Serialization
-  - AFNetworking/Reachability (2.5.0)
-  - AFNetworking/Security (2.5.0)
-  - AFNetworking/Serialization (2.5.0)
-  - AFNetworking/UIKit (2.5.0):
+  - AFNetworking/Reachability (2.5.1)
+  - AFNetworking/Security (2.5.1)
+  - AFNetworking/Serialization (2.5.1)
+  - AFNetworking/UIKit (2.5.1):
     - AFNetworking/NSURLConnection
     - AFNetworking/NSURLSession
   - BKMoneyKit (0.0.5)
   - CountryPicker (1.2.3)
-  - iOS-Slide-Menu (1.4.4)
-  - libPhoneNumber-iOS (0.7.5)
-  - Mantle (1.5.3):
-    - Mantle/extobjc (= 1.5.3)
-  - Mantle/extobjc (1.5.3)
-  - ReactiveCocoa (2.4.2):
-    - ReactiveCocoa/UI (= 2.4.2)
-  - ReactiveCocoa/Core (2.4.2):
+  - DTInlineDatePicker (0.2.0):
+    - DTPickerPresenter (~> 0.1)
+    - DTTableViewManager (~> 3.0)
+  - DTModelStorage (1.1.2):
+    - DTModelStorage/All (= 1.1.2)
+  - DTModelStorage/All (1.1.2):
+    - DTModelStorage/Core
+    - DTModelStorage/CoreDataStorage
+    - DTModelStorage/MemoryStorage
+  - DTModelStorage/Core (1.1.2)
+  - DTModelStorage/CoreDataStorage (1.1.2):
+    - DTModelStorage/Core
+  - DTModelStorage/MemoryStorage (1.1.2):
+    - DTModelStorage/Core
+  - DTPickerPresenter (0.2.0)
+  - DTTableViewManager (3.0.5):
+    - DTModelStorage (~> 1.1.2)
+  - iOS-Slide-Menu (1.4.5)
+  - libPhoneNumber-iOS (0.8.3)
+  - M13BadgeView (1.0.4)
+  - Mantle (1.5.4):
+    - Mantle/extobjc (= 1.5.4)
+  - Mantle/extobjc (1.5.4)
+  - MBProgressHUD (0.9.1)
+  - ReactiveCocoa (2.4.7):
+    - ReactiveCocoa/UI (= 2.4.7)
+  - ReactiveCocoa/Core (2.4.7):
     - ReactiveCocoa/no-arc
-  - ReactiveCocoa/no-arc (2.4.2)
-  - ReactiveCocoa/UI (2.4.2):
+  - ReactiveCocoa/no-arc (2.4.7)
+  - ReactiveCocoa/UI (2.4.7):
     - ReactiveCocoa/Core
-  - YandexMapKit (1.0.6)
+  - UIAlertView-Blocks (1.0)
+  - YandexMapKit (1.0.7)
 
 DEPENDENCIES:
   - AFNetworking
   - BKMoneyKit
   - CountryPicker
+  - DTInlineDatePicker
   - iOS-Slide-Menu
   - libPhoneNumber-iOS (~> 0.7)
+  - M13BadgeView
   - Mantle
+  - MBProgressHUD
   - ReactiveCocoa
+  - UIAlertView-Blocks
   - YandexMapKit
 
 SPEC CHECKSUMS:
-  AFNetworking: 0f54cb5d16ce38c1b76948faffb8d5fb705021c7
+  AFNetworking: 8bee59492a6ff15d69130efa4d0dc67e0094a52a
   BKMoneyKit: 4859d910a3ec4447fe799d890ceff33d57aaa1f6
   CountryPicker: f75fcb322007ffd2eae728a9e0c407ad60c0593e
-  iOS-Slide-Menu: 7891c4e4180aac2b23fb2e5459ff61b8691a8496
-  libPhoneNumber-iOS: 16b9556d7fdf4819eabeb7b7356fea3373fa47f9
-  Mantle: 8d84cacd6c2a69ff6fbce985a2b51298a5495de3
-  ReactiveCocoa: 8418a82b67af2f1b7587baf29c329040a23c2063
-  YandexMapKit: 37e26a6f53139a05867f8937f2568a98d3269df4
+  DTInlineDatePicker: a3b1324625721d065f24af16a1a324d678cff10d
+  DTModelStorage: 3542ba5bee1d3654924abeccd8cb8733c5e278e7
+  DTPickerPresenter: 0ed2826ddccf675a3e2f9728ee8a3ca443fb7dbf
+  DTTableViewManager: ffe662e478e63e3942cf1c03e0b5fe74c0e8b735
+  iOS-Slide-Menu: 3037b28b483ad0191b2a8b0644dec57995631c1d
+  libPhoneNumber-iOS: 640f078c832d2ded97ae24134bc009c3300686e3
+  M13BadgeView: 25d03b04630496dfdb6c3f8eb793f6b1664495f8
+  Mantle: d5fbaf30fbc58031223af13812c060e15934a1fe
+  MBProgressHUD: f3747dcbd45a9e855a6b0674550651e0b7ed250c
+  ReactiveCocoa: 313fc53cc9aeb2bbbc3f5f13c7eac16478d9af8f
+  UIAlertView-Blocks: f3271e84372beb97aea115cd1fb26ae66457f12f
+  YandexMapKit: 2a9e44695a558cd4e5ee3aaa22fa3549f983648c
 
 COCOAPODS: 0.35.0

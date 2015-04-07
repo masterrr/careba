@@ -29,7 +29,6 @@
     buttonItem.tintColor = [UIColor whiteColor];
     
     [SlideNavigationController sharedInstance].leftBarButtonItem = buttonItem;
-    
         
     return YES;
 }

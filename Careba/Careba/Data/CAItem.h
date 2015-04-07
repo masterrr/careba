@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import <Mantle.h>
+#import "UIImageView+AFNetworking.h"
 
 //"id": "329",
 //"name": "Мясное плато на компанию",
@@ -26,6 +27,12 @@
 @property NSString *descr;
 @property NSString *imageUrl;
 @property NSNumber *count;
+
+-(NSURL*)imageNSURL;
+
+-(NSInteger)quantityInCard;
+
+-(void)image:(void(^)(UIImage *image))callback;
 
 
 @end

@@ -31,4 +31,8 @@
 
 }
 
+-(YMKMapCoordinate)coordinate {
+    return YMKMapCoordinateMake(self.lat.doubleValue, self.lng.doubleValue);
+}
+
 @end

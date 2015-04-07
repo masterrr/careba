@@ -11,6 +11,7 @@
 		AF0423121A41A7DB00204FB4 /* CACafeAboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF0423111A41A7DB00204FB4 /* CACafeAboutViewController.m */; };
 		AF0423151A41BDC500204FB4 /* CAInsetFoodKindTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = AF0423141A41BDC500204FB4 /* CAInsetFoodKindTextField.m */; };
 		AF0423181A41BE2700204FB4 /* CAPlaceKindCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AF0423171A41BE2700204FB4 /* CAPlaceKindCollectionViewCell.m */; };
+		AF0AC2491AAE352E00D09A72 /* CACheckoutNextCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AF0AC2481AAE352E00D09A72 /* CACheckoutNextCell.m */; };
 		AF2B4DFE1A41DEA900645259 /* CAFoodCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AF2B4DFD1A41DEA900645259 /* CAFoodCell.m */; };
 		AF2D61481A4EFEA4009F0135 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF84C64F1A38AD2700C9288B /* CoreTelephony.framework */; };
 		AF2D614B1A4F0FCC009F0135 /* CACodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF2D614A1A4F0FCC009F0135 /* CACodeViewController.m */; };
@@ -28,6 +29,11 @@
 		AF4C84C11A90C7C200AFE32F /* CAFoodSetCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AF4C84C01A90C7C200AFE32F /* CAFoodSetCell.m */; };
 		AF4C8EAC1A38AA7000E8390A /* CACafeListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF4C8EAB1A38AA6F00E8390A /* CACafeListViewController.m */; };
 		AF50EF8C1A42DCF700B9793A /* UIView+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = AF50EF8B1A42DCF700B9793A /* UIView+Utils.m */; };
+		AF5845731AA2112800BBD2F1 /* CAShopCard.m in Sources */ = {isa = PBXBuildFile; fileRef = AF5845721AA2112800BBD2F1 /* CAShopCard.m */; };
+		AF5FEBEF1AB3186100974A3D /* CAOrderStatusViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF5FEBEE1AB3186100974A3D /* CAOrderStatusViewController.m */; };
+		AF64F1891AB0C2D200C005C0 /* CADatePickerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AF64F1881AB0C2D200C005C0 /* CADatePickerCell.m */; };
+		AF64F18C1AB2297900C005C0 /* CAProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF64F18B1AB2297900C005C0 /* CAProfileViewController.m */; };
+		AF64F18F1AB22C8400C005C0 /* CAProfileCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AF64F18E1AB22C8400C005C0 /* CAProfileCell.m */; };
 		AF814CE71A48864C00342157 /* CAMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF814CE61A48864C00342157 /* CAMenuViewController.m */; };
 		AF814CEA1A4893F500342157 /* CAMenuCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AF814CE91A4893F500342157 /* CAMenuCell.m */; };
 		AF814CED1A494D6500342157 /* CAAboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF814CEC1A494D6500342157 /* CAAboutViewController.m */; };
@@ -44,13 +50,21 @@
 		AF814D0F1A4D54F800342157 /* CAFoodCellSingle.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF814D0D1A4D54F800342157 /* CAFoodCellSingle.xib */; };
 		AF814D121A4D715200342157 /* CAPhoneNumberConfirmationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF814D111A4D715200342157 /* CAPhoneNumberConfirmationViewController.m */; };
 		AF8D76E91A38A7C20074017D /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = AF8D76E81A38A7C20074017D /* Constants.m */; };
+		AF8FC7881AA4F065009591B3 /* CAItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AF8FC7871AA4F065009591B3 /* CAItemCell.m */; };
+		AF8FC78B1AA5020D009591B3 /* UIImage+Color.m in Sources */ = {isa = PBXBuildFile; fileRef = AF8FC78A1AA5020D009591B3 /* UIImage+Color.m */; };
 		AF9F16F41A38B37600DBF6E0 /* CAAppearance.m in Sources */ = {isa = PBXBuildFile; fileRef = AF9F16F31A38B37600DBF6E0 /* CAAppearance.m */; };
 		AF9F16F81A38B5CC00DBF6E0 /* UIViewController+CAFakeNavBar.m in Sources */ = {isa = PBXBuildFile; fileRef = AF9F16F71A38B5CC00DBF6E0 /* UIViewController+CAFakeNavBar.m */; };
+		AFBF23D31AAB702A00182325 /* CAPointsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AFBF23D21AAB702A00182325 /* CAPointsViewController.m */; };
+		AFBF23D61AAB747900182325 /* CAHistoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AFBF23D51AAB747900182325 /* CAHistoryViewController.m */; };
+		AFBF23D91AAB75FB00182325 /* CAHistoryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AFBF23D81AAB75FB00182325 /* CAHistoryCell.m */; };
 		AFCDC4101A3995EC00EE755A /* CAInsetSearchTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = AFCDC40F1A3995EC00EE755A /* CAInsetSearchTextField.m */; };
 		AFCDC4141A39AC3900EE755A /* CAFoodKindCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AFCDC4131A39AC3900EE755A /* CAFoodKindCollectionViewCell.m */; };
 		AFCDC4171A39C28F00EE755A /* CACafeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AFCDC4161A39C28F00EE755A /* CACafeCell.m */; };
 		AFCDC41A1A39CACB00EE755A /* CAInsetCafeRatingTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = AFCDC4191A39CACB00EE755A /* CAInsetCafeRatingTextField.m */; };
 		AFCDC4201A39CD1200EE755A /* CAInsetCafeFeatureTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = AFCDC41F1A39CD1200EE755A /* CAInsetCafeFeatureTextField.m */; };
+		AFCE20EC1AA5D7B50094B0AA /* CAQuantityTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = AFCE20EB1AA5D7B50094B0AA /* CAQuantityTextField.m */; };
+		AFCE20EF1AA5DCA40094B0AA /* CACheckoutNextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AFCE20EE1AA5DCA40094B0AA /* CACheckoutNextViewController.m */; };
+		AFCE20F21AA5E3E00094B0AA /* CAPickerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AFCE20F11AA5E3E00094B0AA /* CAPickerCell.m */; };
 		AFD892751A51FA5F0048DE27 /* CAPlace.m in Sources */ = {isa = PBXBuildFile; fileRef = AFD892741A51FA5F0048DE27 /* CAPlace.m */; };
 		AFD892791A51FC550048DE27 /* CACore.m in Sources */ = {isa = PBXBuildFile; fileRef = AFD892781A51FC550048DE27 /* CACore.m */; };
 		AFD8927C1A51FC9E0048DE27 /* CAPlacesManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AFD8927B1A51FC9E0048DE27 /* CAPlacesManager.m */; };
@@ -60,6 +74,7 @@
 		AFD8DCD01A2E0C770005DFB0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFD8DCCE1A2E0C770005DFB0 /* Main.storyboard */; };
 		AFD8DCD21A2E0C770005DFB0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFD8DCD11A2E0C770005DFB0 /* Images.xcassets */; };
 		AFD8DCD51A2E0C770005DFB0 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = AFD8DCD31A2E0C770005DFB0 /* LaunchScreen.xib */; };
+		AFDA61771AB32C0800F7E5EF /* CAOrderStatusCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AFDA61761AB32C0800F7E5EF /* CAOrderStatusCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -72,6 +87,8 @@
 		AF0423141A41BDC500204FB4 /* CAInsetFoodKindTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CAInsetFoodKindTextField.m; sourceTree = "<group>"; };
 		AF0423161A41BE2700204FB4 /* CAPlaceKindCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAPlaceKindCollectionViewCell.h; sourceTree = "<group>"; };
 		AF0423171A41BE2700204FB4 /* CAPlaceKindCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CAPlaceKindCollectionViewCell.m; sourceTree = "<group>"; };
+		AF0AC2471AAE352E00D09A72 /* CACheckoutNextCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CACheckoutNextCell.h; sourceTree = "<group>"; };
+		AF0AC2481AAE352E00D09A72 /* CACheckoutNextCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CACheckoutNextCell.m; sourceTree = "<group>"; };
 		AF2B4DFC1A41DEA900645259 /* CAFoodCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAFoodCell.h; sourceTree = "<group>"; };
 		AF2B4DFD1A41DEA900645259 /* CAFoodCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CAFoodCell.m; sourceTree = "<group>"; };
 		AF2D61491A4F0FCC009F0135 /* CACodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CACodeViewController.h; sourceTree = "<group>"; };
@@ -105,6 +122,16 @@
 		AF4C8EAD1A38AB6200E8390A /* Careba-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Careba-Prefix.pch"; sourceTree = "<group>"; };
 		AF50EF8A1A42DCF700B9793A /* UIView+Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Utils.h"; sourceTree = "<group>"; };
 		AF50EF8B1A42DCF700B9793A /* UIView+Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Utils.m"; sourceTree = "<group>"; };
+		AF5845711AA2112800BBD2F1 /* CAShopCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAShopCard.h; sourceTree = "<group>"; };
+		AF5845721AA2112800BBD2F1 /* CAShopCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CAShopCard.m; sourceTree = "<group>"; };
+		AF5FEBED1AB3186100974A3D /* CAOrderStatusViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAOrderStatusViewController.h; sourceTree = "<group>"; };
+		AF5FEBEE1AB3186100974A3D /* CAOrderStatusViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CAOrderStatusViewController.m; sourceTree = "<group>"; };
+		AF64F1871AB0C2D200C005C0 /* CADatePickerCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CADatePickerCell.h; sourceTree = "<group>"; };
+		AF64F1881AB0C2D200C005C0 /* CADatePickerCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CADatePickerCell.m; sourceTree = "<group>"; };
+		AF64F18A1AB2297900C005C0 /* CAProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAProfileViewController.h; sourceTree = "<group>"; };
+		AF64F18B1AB2297900C005C0 /* CAProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CAProfileViewController.m; sourceTree = "<group>"; };
+		AF64F18D1AB22C8400C005C0 /* CAProfileCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAProfileCell.h; sourceTree = "<group>"; };
+		AF64F18E1AB22C8400C005C0 /* CAProfileCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CAProfileCell.m; sourceTree = "<group>"; };
 		AF814CE51A48864C00342157 /* CAMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAMenuViewController.h; sourceTree = "<group>"; };
 		AF814CE61A48864C00342157 /* CAMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CAMenuViewController.m; sourceTree = "<group>"; };
 		AF814CE81A4893F500342157 /* CAMenuCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAMenuCell.h; sourceTree = "<group>"; };
@@ -150,10 +177,20 @@
 		AF84C6631A38AD6C00C9288B /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		AF8D76E71A38A7C20074017D /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 		AF8D76E81A38A7C20074017D /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
+		AF8FC7861AA4F065009591B3 /* CAItemCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAItemCell.h; sourceTree = "<group>"; };
+		AF8FC7871AA4F065009591B3 /* CAItemCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CAItemCell.m; sourceTree = "<group>"; };
+		AF8FC7891AA5020D009591B3 /* UIImage+Color.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Color.h"; sourceTree = "<group>"; };
+		AF8FC78A1AA5020D009591B3 /* UIImage+Color.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Color.m"; sourceTree = "<group>"; };
 		AF9F16F21A38B37600DBF6E0 /* CAAppearance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAAppearance.h; sourceTree = "<group>"; };
 		AF9F16F31A38B37600DBF6E0 /* CAAppearance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CAAppearance.m; sourceTree = "<group>"; };
 		AF9F16F61A38B5CC00DBF6E0 /* UIViewController+CAFakeNavBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+CAFakeNavBar.h"; sourceTree = "<group>"; };
 		AF9F16F71A38B5CC00DBF6E0 /* UIViewController+CAFakeNavBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+CAFakeNavBar.m"; sourceTree = "<group>"; };
+		AFBF23D11AAB702A00182325 /* CAPointsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAPointsViewController.h; sourceTree = "<group>"; };
+		AFBF23D21AAB702A00182325 /* CAPointsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CAPointsViewController.m; sourceTree = "<group>"; };
+		AFBF23D41AAB747900182325 /* CAHistoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAHistoryViewController.h; sourceTree = "<group>"; };
+		AFBF23D51AAB747900182325 /* CAHistoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CAHistoryViewController.m; sourceTree = "<group>"; };
+		AFBF23D71AAB75FB00182325 /* CAHistoryCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAHistoryCell.h; sourceTree = "<group>"; };
+		AFBF23D81AAB75FB00182325 /* CAHistoryCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CAHistoryCell.m; sourceTree = "<group>"; };
 		AFCDC40E1A3995EC00EE755A /* CAInsetSearchTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAInsetSearchTextField.h; sourceTree = "<group>"; };
 		AFCDC40F1A3995EC00EE755A /* CAInsetSearchTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CAInsetSearchTextField.m; sourceTree = "<group>"; };
 		AFCDC4121A39AC3900EE755A /* CAFoodKindCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAFoodKindCollectionViewCell.h; sourceTree = "<group>"; };
@@ -164,6 +201,12 @@
 		AFCDC4191A39CACB00EE755A /* CAInsetCafeRatingTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CAInsetCafeRatingTextField.m; sourceTree = "<group>"; };
 		AFCDC41E1A39CD1200EE755A /* CAInsetCafeFeatureTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAInsetCafeFeatureTextField.h; sourceTree = "<group>"; };
 		AFCDC41F1A39CD1200EE755A /* CAInsetCafeFeatureTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CAInsetCafeFeatureTextField.m; sourceTree = "<group>"; };
+		AFCE20EA1AA5D7B50094B0AA /* CAQuantityTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAQuantityTextField.h; sourceTree = "<group>"; };
+		AFCE20EB1AA5D7B50094B0AA /* CAQuantityTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CAQuantityTextField.m; sourceTree = "<group>"; };
+		AFCE20ED1AA5DCA40094B0AA /* CACheckoutNextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CACheckoutNextViewController.h; sourceTree = "<group>"; };
+		AFCE20EE1AA5DCA40094B0AA /* CACheckoutNextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CACheckoutNextViewController.m; sourceTree = "<group>"; };
+		AFCE20F01AA5E3E00094B0AA /* CAPickerCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAPickerCell.h; sourceTree = "<group>"; };
+		AFCE20F11AA5E3E00094B0AA /* CAPickerCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CAPickerCell.m; sourceTree = "<group>"; };
 		AFD892731A51FA5E0048DE27 /* CAPlace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAPlace.h; sourceTree = "<group>"; };
 		AFD892741A51FA5F0048DE27 /* CAPlace.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CAPlace.m; sourceTree = "<group>"; };
 		AFD892771A51FC550048DE27 /* CACore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CACore.h; sourceTree = "<group>"; };
@@ -182,6 +225,8 @@
 		AFD8DCD41A2E0C770005DFB0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		AFD8DCDF1A2E0C770005DFB0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AFD8DCE01A2E0C770005DFB0 /* CarebaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CarebaTests.m; sourceTree = "<group>"; };
+		AFDA61751AB32C0800F7E5EF /* CAOrderStatusCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAOrderStatusCell.h; sourceTree = "<group>"; };
+		AFDA61761AB32C0800F7E5EF /* CAOrderStatusCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CAOrderStatusCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -277,6 +322,16 @@
 				AF2D614D1A4F11DE009F0135 /* CAWhatsYourNameViewController.m */,
 				AF2D615A1A4F3706009F0135 /* CACardViewController.h */,
 				AF2D615B1A4F3706009F0135 /* CACardViewController.m */,
+				AFCE20ED1AA5DCA40094B0AA /* CACheckoutNextViewController.h */,
+				AFCE20EE1AA5DCA40094B0AA /* CACheckoutNextViewController.m */,
+				AFBF23D11AAB702A00182325 /* CAPointsViewController.h */,
+				AFBF23D21AAB702A00182325 /* CAPointsViewController.m */,
+				AFBF23D41AAB747900182325 /* CAHistoryViewController.h */,
+				AFBF23D51AAB747900182325 /* CAHistoryViewController.m */,
+				AF64F18A1AB2297900C005C0 /* CAProfileViewController.h */,
+				AF64F18B1AB2297900C005C0 /* CAProfileViewController.m */,
+				AF5FEBED1AB3186100974A3D /* CAOrderStatusViewController.h */,
+				AF5FEBEE1AB3186100974A3D /* CAOrderStatusViewController.m */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -295,6 +350,10 @@
 				AFCDC41F1A39CD1200EE755A /* CAInsetCafeFeatureTextField.m */,
 				AF0423131A41BDC500204FB4 /* CAInsetFoodKindTextField.h */,
 				AF0423141A41BDC500204FB4 /* CAInsetFoodKindTextField.m */,
+				AF8FC7891AA5020D009591B3 /* UIImage+Color.h */,
+				AF8FC78A1AA5020D009591B3 /* UIImage+Color.m */,
+				AFCE20EA1AA5D7B50094B0AA /* CAQuantityTextField.h */,
+				AFCE20EB1AA5D7B50094B0AA /* CAQuantityTextField.m */,
 			);
 			path = Interface;
 			sourceTree = "<group>";
@@ -339,6 +398,20 @@
 				AF4C84BA1A90C21A00AFE32F /* CAFoodSectionCell.m */,
 				AF4C84BF1A90C7C200AFE32F /* CAFoodSetCell.h */,
 				AF4C84C01A90C7C200AFE32F /* CAFoodSetCell.m */,
+				AF8FC7861AA4F065009591B3 /* CAItemCell.h */,
+				AF8FC7871AA4F065009591B3 /* CAItemCell.m */,
+				AFCE20F01AA5E3E00094B0AA /* CAPickerCell.h */,
+				AFCE20F11AA5E3E00094B0AA /* CAPickerCell.m */,
+				AFBF23D71AAB75FB00182325 /* CAHistoryCell.h */,
+				AFBF23D81AAB75FB00182325 /* CAHistoryCell.m */,
+				AF0AC2471AAE352E00D09A72 /* CACheckoutNextCell.h */,
+				AF0AC2481AAE352E00D09A72 /* CACheckoutNextCell.m */,
+				AF64F1871AB0C2D200C005C0 /* CADatePickerCell.h */,
+				AF64F1881AB0C2D200C005C0 /* CADatePickerCell.m */,
+				AF64F18D1AB22C8400C005C0 /* CAProfileCell.h */,
+				AF64F18E1AB22C8400C005C0 /* CAProfileCell.m */,
+				AFDA61751AB32C0800F7E5EF /* CAOrderStatusCell.h */,
+				AFDA61761AB32C0800F7E5EF /* CAOrderStatusCell.m */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -369,6 +442,8 @@
 				AFD8927B1A51FC9E0048DE27 /* CAPlacesManager.m */,
 				AF4C84B61A90BCC300AFE32F /* CAMenuManager.h */,
 				AF4C84B71A90BCC300AFE32F /* CAMenuManager.m */,
+				AF5845711AA2112800BBD2F1 /* CAShopCard.h */,
+				AF5845721AA2112800BBD2F1 /* CAShopCard.m */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -483,6 +558,7 @@
 				TargetAttributes = {
 					AFD8DCC01A2E0C770005DFB0 = {
 						CreatedOnToolsVersion = 6.1;
+						DevelopmentTeam = 8R33YG5PMM;
 					};
 				};
 			};
@@ -562,43 +638,58 @@
 				AFCDC41A1A39CACB00EE755A /* CAInsetCafeRatingTextField.m in Sources */,
 				AFD8DCCD1A2E0C770005DFB0 /* ViewController.m in Sources */,
 				AFCDC4101A3995EC00EE755A /* CAInsetSearchTextField.m in Sources */,
+				AFBF23D31AAB702A00182325 /* CAPointsViewController.m in Sources */,
 				AF814CFF1A4C573900342157 /* UIViewController+Style.m in Sources */,
 				AF2B4DFE1A41DEA900645259 /* CAFoodCell.m in Sources */,
 				AFD892751A51FA5F0048DE27 /* CAPlace.m in Sources */,
+				AF64F1891AB0C2D200C005C0 /* CADatePickerCell.m in Sources */,
+				AF5845731AA2112800BBD2F1 /* CAShopCard.m in Sources */,
 				AF2D61591A4F131A009F0135 /* DZGDictionaryStringParser.m in Sources */,
+				AF64F18F1AB22C8400C005C0 /* CAProfileCell.m in Sources */,
 				AF9F16F41A38B37600DBF6E0 /* CAAppearance.m in Sources */,
 				AF2D614B1A4F0FCC009F0135 /* CACodeViewController.m in Sources */,
 				AF814CF91A4C56EA00342157 /* CAOrdersHistoryViewController.m in Sources */,
 				AF4C84AF1A90B9D300AFE32F /* CAMenu.m in Sources */,
+				AFCE20EF1AA5DCA40094B0AA /* CACheckoutNextViewController.m in Sources */,
 				AF814CE71A48864C00342157 /* CAMenuViewController.m in Sources */,
 				AFD8DCCA1A2E0C770005DFB0 /* AppDelegate.m in Sources */,
 				AF4C84BB1A90C21A00AFE32F /* CAFoodSectionCell.m in Sources */,
 				AF2D61581A4F131A009F0135 /* DZGImgGlyphTextView.m in Sources */,
 				AF0423181A41BE2700204FB4 /* CAPlaceKindCollectionViewCell.m in Sources */,
+				AFBF23D61AAB747900182325 /* CAHistoryViewController.m in Sources */,
 				AFD8DCC71A2E0C770005DFB0 /* main.m in Sources */,
 				AFCDC4141A39AC3900EE755A /* CAFoodKindCollectionViewCell.m in Sources */,
 				AFCDC4201A39CD1200EE755A /* CAInsetCafeFeatureTextField.m in Sources */,
 				AF4C84BE1A90C69A00AFE32F /* CASet.m in Sources */,
 				AF9F16F81A38B5CC00DBF6E0 /* UIViewController+CAFakeNavBar.m in Sources */,
+				AF64F18C1AB2297900C005C0 /* CAProfileViewController.m in Sources */,
 				AF814CED1A494D6500342157 /* CAAboutViewController.m in Sources */,
 				AF50EF8C1A42DCF700B9793A /* UIView+Utils.m in Sources */,
+				AF8FC7881AA4F065009591B3 /* CAItemCell.m in Sources */,
 				AF814CF01A495DD500342157 /* CAAboutSocialCell.m in Sources */,
+				AFCE20EC1AA5D7B50094B0AA /* CAQuantityTextField.m in Sources */,
+				AF0AC2491AAE352E00D09A72 /* CACheckoutNextCell.m in Sources */,
 				AF2D614E1A4F11DE009F0135 /* CAWhatsYourNameViewController.m in Sources */,
 				AF0423151A41BDC500204FB4 /* CAInsetFoodKindTextField.m in Sources */,
 				AF814CF61A4C481200342157 /* CACheckoutViewController.m in Sources */,
+				AF5FEBEF1AB3186100974A3D /* CAOrderStatusViewController.m in Sources */,
 				AFD892791A51FC550048DE27 /* CACore.m in Sources */,
 				AF4C84C11A90C7C200AFE32F /* CAFoodSetCell.m in Sources */,
+				AFCE20F21AA5E3E00094B0AA /* CAPickerCell.m in Sources */,
 				AFD8927C1A51FC9E0048DE27 /* CAPlacesManager.m in Sources */,
+				AFDA61771AB32C0800F7E5EF /* CAOrderStatusCell.m in Sources */,
 				AF4C84B81A90BCC300AFE32F /* CAMenuManager.m in Sources */,
 				AF4C8EAC1A38AA7000E8390A /* CACafeListViewController.m in Sources */,
 				AF814D021A4C57EA00342157 /* CABusinessLunchViewController.m in Sources */,
 				AF814D0E1A4D54F800342157 /* CAFoodCellSingle.m in Sources */,
 				AF2D61571A4F131A009F0135 /* DZGImgGlyphLabel.m in Sources */,
+				AFBF23D91AAB75FB00182325 /* CAHistoryCell.m in Sources */,
 				AF0423121A41A7DB00204FB4 /* CACafeAboutViewController.m in Sources */,
 				AF4C84B21A90BA3B00AFE32F /* CASection.m in Sources */,
 				AF2D615C1A4F3706009F0135 /* CACardViewController.m in Sources */,
 				AF4C84B51A90BAC500AFE32F /* CAItem.m in Sources */,
 				AF814D081A4D4FB400342157 /* CAFoodListViewController.m in Sources */,
+				AF8FC78B1AA5020D009591B3 /* UIImage+Color.m in Sources */,
 				AFCDC4171A39C28F00EE755A /* CACafeCell.m in Sources */,
 				AF8D76E91A38A7C20074017D /* Constants.m in Sources */,
 				AF814D121A4D715200342157 /* CAPhoneNumberConfirmationViewController.m in Sources */,
@@ -710,6 +801,7 @@
 			buildSettings = {
 				ARCHS = armv7;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PREFIX_HEADER = "Careba/Careba-Prefix.pch";
 				INFOPLIST_FILE = Careba/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -724,6 +816,7 @@
 			buildSettings = {
 				ARCHS = armv7;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PREFIX_HEADER = "Careba/Careba-Prefix.pch";
 				INFOPLIST_FILE = Careba/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

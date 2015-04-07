@@ -7,16 +7,20 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@protocol CAFoodCellCellDelegate;
-
-@interface CAFoodCell : UICollectionViewCell
-
-@property (nonatomic, assign) id<CAFoodCellCellDelegate> delegate;
-
-
-@end
+#import "CAItem.h"
 
 @protocol CAFoodCellDelegate <NSObject>
 
+-(void)clickedUp:(CAItem*)item;
+-(void)clickedDown:(CAItem*)item;
+
 @end
+
+
+@interface CAFoodCell : UICollectionViewCell
+
+@property (nonatomic, assign) id<CAFoodCellDelegate> delegate;
+-(void)setItem:(CAItem*)item;
+
+@end
+

@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CASection.h"
 
 typedef NS_ENUM(NSUInteger, CAFoodListVCEnum) {
     CAFoodListVCSingleMode,
@@ -16,5 +17,6 @@ typedef NS_ENUM(NSUInteger, CAFoodListVCEnum) {
 @interface CAFoodListViewController : UIViewController
 
 @property CAFoodListVCEnum vcMode;
+@property CASection *section;
 
 @end

@@ -8,8 +8,10 @@
 
 #import <Foundation/Foundation.h>
 #import <Mantle.h>
+@import CoreLocation;
+#import <YandexMapKit/YandexMapKit.h>
 
-@interface CAPlace : MTLModel <MTLJSONSerializing>
+@interface CAPlace : MTLModel <MTLJSONSerializing, YMKAnnotation>
 
 @property NSNumber *id;
 @property NSString *name;
@@ -28,6 +30,10 @@
 @property NSString *rating;
 @property BOOL wifi;
 @property BOOL parking;
+@property NSNumber *lat;
+@property NSNumber *lng;
+
+- (YMKMapCoordinate)coordinate;
 
 -(BOOL)IsFoodForPoints;
 -(BOOL)IsPromotion;

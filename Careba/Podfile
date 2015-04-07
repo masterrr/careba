@@ -12,5 +12,9 @@ target 'Careba' do
   pod 'BKMoneyKit'
   pod 'AFNetworking'
   pod 'Mantle'
+  pod 'MBProgressHUD'
+  pod 'M13BadgeView'
+  pod 'UIAlertView-Blocks'
+  pod 'DTInlineDatePicker'
 end
 

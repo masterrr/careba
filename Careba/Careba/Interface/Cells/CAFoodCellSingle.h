@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CAItem.h"
+
 
 @interface CAFoodCellSingle : UICollectionViewCell
+
+-(void)setItem:(CAItem*)item;
 
 @end

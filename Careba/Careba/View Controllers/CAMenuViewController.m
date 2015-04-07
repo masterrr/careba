@@ -19,6 +19,9 @@
 - (IBAction)socialTap:(id)sender {
     NSLog(@"social tap");
 }
+- (IBAction)profileTap:(id)sender {
+    [self switchToName:@"CAProfileViewController"];
+}
 
 -(void)viewDidLoad {
     _tableView.delegate = self;
@@ -84,10 +87,10 @@
             [self switchToName:@"CACafeListViewController"];
             break;
         case 1:
-            // orders history
+            [self switchToName:@"CAHistoryViewController"];
             break;
         case 2:
-            // bouns points
+            [self switchToName:@"CAPointsViewController"];
             break;
         case 3:
             [self switchToName:@"CAAboutViewController"];

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6250" systemVersion="14A388a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
@@ -13,7 +13,7 @@
                 <rect key="frame" x="0.0" y="0.0" width="195" height="192"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="food_sampe" translatesAutoresizingMaskIntoConstraints="NO" id="m9R-L8-fNQ">
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="food_sampe" translatesAutoresizingMaskIntoConstraints="NO" id="m9R-L8-fNQ">
                         <rect key="frame" x="0.0" y="0.0" width="195" height="192"/>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Жареные баклажаны с сыром Фета" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2NM-Wy-HOn">
@@ -32,17 +32,25 @@
                             <action selector="plusButtonHit:" destination="Ao9-42-hOk" eventType="touchUpInside" id="3Za-b4-d75"/>
                         </connections>
                     </button>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2aQ-ae-1iY">
+                        <rect key="frame" x="0.0" y="0.0" width="195" height="192"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.45000000000000001" colorSpace="calibratedRGB"/>
+                    </view>
                 </subviews>
                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             </view>
             <constraints>
                 <constraint firstItem="m9R-L8-fNQ" firstAttribute="top" secondItem="Ao9-42-hOk" secondAttribute="top" id="0Te-EP-llo"/>
                 <constraint firstItem="2NM-Wy-HOn" firstAttribute="leading" secondItem="Ao9-42-hOk" secondAttribute="leading" constant="4" id="5HO-FM-5gE"/>
+                <constraint firstItem="m9R-L8-fNQ" firstAttribute="bottom" secondItem="2aQ-ae-1iY" secondAttribute="bottom" id="7l2-Sf-SyW"/>
+                <constraint firstItem="m9R-L8-fNQ" firstAttribute="trailing" secondItem="2aQ-ae-1iY" secondAttribute="trailing" id="80Z-rx-aLf"/>
                 <constraint firstAttribute="centerX" secondItem="Blf-Qg-i1T" secondAttribute="centerX" id="IQv-N8-Ddx"/>
                 <constraint firstItem="m9R-L8-fNQ" firstAttribute="leading" secondItem="Ao9-42-hOk" secondAttribute="leading" id="V1Z-IZ-wwh"/>
                 <constraint firstAttribute="bottom" secondItem="m9R-L8-fNQ" secondAttribute="bottom" id="Vav-Pf-e23"/>
                 <constraint firstAttribute="trailing" secondItem="2NM-Wy-HOn" secondAttribute="trailing" constant="4" id="YiI-lF-qBM"/>
+                <constraint firstItem="m9R-L8-fNQ" firstAttribute="top" secondItem="2aQ-ae-1iY" secondAttribute="top" id="gL3-B6-b2p"/>
                 <constraint firstAttribute="bottom" secondItem="2NM-Wy-HOn" secondAttribute="bottom" constant="20" id="i6b-wx-BhM"/>
+                <constraint firstItem="m9R-L8-fNQ" firstAttribute="leading" secondItem="2aQ-ae-1iY" secondAttribute="leading" id="m4v-ID-mZ4"/>
                 <constraint firstAttribute="centerY" secondItem="Blf-Qg-i1T" secondAttribute="centerY" constant="30" id="mhI-7T-Ndn"/>
                 <constraint firstAttribute="trailing" secondItem="Blf-Qg-i1T" secondAttribute="trailing" constant="20" id="orR-h6-GSZ"/>
                 <constraint firstAttribute="trailing" secondItem="m9R-L8-fNQ" secondAttribute="trailing" id="rzM-5K-DpO"/>
@@ -54,7 +62,9 @@
                 </mask>
             </variation>
             <connections>
+                <outlet property="imageView" destination="m9R-L8-fNQ" id="3n1-n7-H3A"/>
                 <outlet property="plusButton" destination="Blf-Qg-i1T" id="pkV-Ag-RBy"/>
+                <outlet property="titleLabel" destination="2NM-Wy-HOn" id="E7z-Yi-IJb"/>
             </connections>
             <point key="canvasLocation" x="428.5" y="679"/>
         </collectionViewCell>

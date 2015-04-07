@@ -12,11 +12,17 @@
 
 @interface CABusinessLunchViewController () <UITableViewDataSource, UITableViewDelegate>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
+@property (weak, nonatomic) IBOutlet UILabel *aboutFirstLineLabel;
+@property (weak, nonatomic) IBOutlet UILabel *aboutSecondLineLabel;
+
+
 - (IBAction)checkout:(id)sender;
 
 @end
 
-@implementation CABusinessLunchViewController
+@implementation CABusinessLunchViewController {
+    id _selectedObject;
+}
 
 -(void)viewWillAppear:(BOOL)animated {
     [self applyWhiteStyle];
@@ -30,7 +36,11 @@
 }
 
 -(void)viewDidLoad {
-    self.title = @"Бизнес-ланч №1";
+    self.title = _set.name;
+    
+    _aboutFirstLineLabel.hidden = true;
+    _aboutSecondLineLabel.text = [NSString stringWithFormat:@"Комплекс стоит %@ р.", _set.price];
+    
     _tableView.delegate = self;
     _tableView.dataSource = self;
     
@@ -41,36 +51,21 @@
 
 -(UITableViewCell*)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
+    CASection *section = _set.sections[indexPath.row];
+    
+    
+    
     CABusinessLunchCell *cell = [tableView dequeueReusableCellWithIdentifier:@"CABusinessLunchCell"];
     
-    NSString *dishName = @"", *dishKind = @"";
-    
-    switch (indexPath.row) {
-        case 0:
-            dishKind = @"Салат";
-            dishName = @"Греческий";
-            break;
-        case 1:
-            dishKind = @"Суп";
-            dishName = @"Борщ";
-            break;
-        case 2:
-            dishKind = @"Горячее блюдо";
-            break;
-        case 3:
-            dishKind = @"Напиток";
-            dishName = @"Coca-Cola";
-        default:
-            break;
-    }
-    
-    cell.dishKindLabel.text = dishKind;
-    cell.dishNameLabel.text = dishName;
+
+    cell.dishKindLabel.text = section.name;
+    cell.dishNameLabel.text = @"";
     
     return cell;
 }
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    _selectedObject = _set.sections[indexPath.row];
     [self performSegueWithIdentifier:@"businessLunchToFoodList" sender:self];
 }
 
@@ -78,11 +73,12 @@
     if ([[segue identifier] isEqualToString:@"businessLunchToFoodList"]) {
         CAFoodListViewController *vc = (CAFoodListViewController*)[segue destinationViewController];
         vc.vcMode = CAFoodListVCSingleMode;
+        vc.section = _selectedObject;
     }
 }
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 4;
+    return _set.sections.count;
 }
 
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {

@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CASet.h"
 
 @interface CABusinessLunchViewController : UIViewController
+
+@property CASet *set;
 
 @end
